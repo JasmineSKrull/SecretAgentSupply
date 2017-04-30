@@ -1,0 +1,388 @@
+html {
+  font-size: 18px;
+  font-family: Helvetica;
+}
+
+/*logo header*/
+
+.header {
+  display: inline-flex;
+  background-color: black;
+  width: 100%;
+}
+
+.logo {
+display: inline-flex;
+align-items: center;
+height: 1.5rem;
+padding-top: 0.66rem;
+padding-bottom: 0.66rem;
+}
+
+.logo img {
+  height: 1.5rem;
+  margin-left: 0.5rem;
+  margin-right: 1rem;
+}
+
+.logoname {
+display: inline-flex;
+align-items: center;
+}
+
+.logoname p {
+  color: white;
+  font-size: 1rem;
+  margin-top: 0.66rem;
+  margin-bottom: 0.66rem;
+}
+
+/*Banner*/
+
+.bannerimg {
+  display: flex;
+  justify-content: flex-start;
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg);
+  height: 25rem;
+  background-size: cover;
+}
+
+.bannerblock {
+  background-color: black;
+  display: block;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 20rem;
+  margin-top: 9rem;
+  margin-bottom: 7rem;
+  margin-left: 9rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.bannerblock h4 {
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 0.25rem;
+}
+
+.bannerblock h2 {
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+/*Navigation*/
+
+.navigation {
+  display: inline-flex;
+  background-color: firebrick;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.navlink {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  margin-left: 4rem;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+/*Container*/
+
+.container {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+}
+
+.pen {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  border: 4px solid black;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  margin-right: 1rem;
+}
+
+.pen p {
+  background-color: black;
+  color: white;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.pen img {
+  height: 9rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.watch {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  border: 4px solid black;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  margin-right: 2rem;
+  margin-left: 1rem;
+}
+
+.watch p {
+  background-color: black;
+  color: white;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}
+
+.watch img {
+  height: 9rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.glasses {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  border: 4px solid black;
+  align-items: center;
+  width: 30%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.glasses p {
+  background-color: black;
+  color: white;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.glasses img {
+  height: 9rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.locationhours {
+  display: flex;
+}
+
+.location {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 4rem;
+  margin-right: 3rem;
+}
+
+.location h3 {
+  background-color: black;
+  color: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  text-align: left;
+  width: 336px;
+}
+
+.location p {
+  width: 336px;
+}
+
+.hours {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.hours h3 {
+  background-color: black;
+  color: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  text-align: left;
+  width: 336px;
+}
+
+.hours p {
+  width: 35%;
+}
+
+/*Copyright*/
+
+.copyright {
+  background-color: black;
+}
+
+.copyright p {
+  color: white;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  padding-left: 2.5rem;
+  text-align: left;
+}
+
+/*Media queries*/
+
+@media only screen and (max-width: 1024px) {
+  .bannerblock {
+    margin-left: 0;
+  }
+
+  .container {
+    width: 700px;
+  }
+
+  .watch {
+    width: 45%;
+  }
+
+  .pen {
+    width: 45%;
+  }
+
+  .glasses {
+    display: none;
+  }
+
+  .locationhours {
+    width: 100%;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: inline-flex;
+    justify-content: center;
+    background-color: firebrick;
+    width: 100%;
+  }
+
+
+}
+
+@media only screen and (max-width: 470px) {
+  .navigation {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .bannerimg {
+    height: 15rem;
+  }
+
+  .bannerblock {
+    margin-top: 10rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .bannerblock h4 {
+    color: white;
+    font-weight: bold;
+    font-size: 0.77rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.25rem;
+    margin-left: 1rem;
+  }
+
+  .bannerblock h2 {
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    padding-bottom: 2rem;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .watch {
+    display: none;
+  }
+
+  .pen {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+  }
+
+  .locationhours {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .location {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    width: 100%;
+  }
+
+  .location p {
+    text-align: left;
+  }
+
+  .hours {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    width: 100%;
+  }
+
+  .hours p {
+    text-align: left;
+  }
+
+  .copyright p {
+    text-align: center;
+  }
+}
